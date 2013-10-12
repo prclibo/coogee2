@@ -34,10 +34,11 @@
 						else{
 							echo mb_strimwidth(strip_tags(apply_filters('the_content', $post->post_content)), 0, 400,"...");
 						} 
-						?>
+                        ?>
+                        <span class="archive_more"><a href="<?php the_permalink() ?>" title="详细阅读 <?php the_title(); ?>" rel="bookmark" class="title">阅读全文</a></span>
+
 						<div class="clear"></div>
-						<span class="posttag"><?php the_tags('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ', ', ', ''); ?></span><span class="archive_more"><a href="<?php the_permalink() ?>" title="详细阅读 <?php the_title(); ?>" rel="bookmark" class="title">阅读全文</a></span>
-						<div class="clear"></div>
+			            <?php the_tags('<span class="tags">',', ','</span>'); ?>
 					</div>
 				</div>
     </div><!-- end post -->
