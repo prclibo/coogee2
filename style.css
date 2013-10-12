@@ -56,6 +56,7 @@ code{
 	display: block;
 }
 
+.clear{clear: both;}
 /*------------------------ Header ------------------------*/
 
 #header{
@@ -205,7 +206,8 @@ code{
 }
 
 .title{
-	height: 48px;
+/*	height: 48px;*/
+    padding: 0 0 5px 0;
 }
 
 .post .title h2{
@@ -265,6 +267,41 @@ code{
 	text-decoration: underline;
 	color: #db5104;
 	/*border-bottom: 1px solid #db5104;*/
+}
+
+.home-post .title h2 a{
+	font-size: 18px;
+	color: #3e606f;
+}
+
+.home-post .title h2{
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	color: #3e606f;
+}
+
+.box_entry {
+	margin: 20px 0 5px 0;
+	padding-bottom: 5px;
+    width: 660px;
+	border-bottom: 1px dashed #cccccc;
+}
+
+.box_entry .postdate{
+  float: right;
+	display: block;
+	background: url(images/date.gif) no-repeat;
+	height: 48px;
+	width: 48px;
+	font-style: bold;
+    background-size: 48px;
+	line-height: 160%;
+	margin-right: 10px;
+}
+
+.thumbnail {
+    float: left;
+    padding: 5px 15px 15px 0px; 
 }
 
 .tags {
