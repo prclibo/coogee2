@@ -23,9 +23,10 @@ else {
     $scale = min($scale, 1.0);
     $width = $width * $scale;
     $height = $height * $scale;
-?>
 
+    if (!empty($image_url)) ?>
 <img class="home-thumb" src="<?php echo $image_url ?>" width="<?php echo $width; ?>px" height="<?php echo $height; ?>px" alt="<?php the_title(); ?>"/>
-<?php } ?></a>
+<?php 
+} ?></a>
 <?php endif; ?>
 </div>

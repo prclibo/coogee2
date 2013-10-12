@@ -29,9 +29,9 @@ if ( function_exists('add_theme_support') )
   $first_img = $matches [1] [0];
 
   if(empty($first_img)){ //Defines a default image
-		$random = mt_rand(1, 20);
+/*		$random = mt_rand(1, 20);
 		echo get_bloginfo ( 'stylesheet_directory' );
-		echo '/images/random/'.$random.'.jpg';
+echo '/images/random/'.$random.'.jpg';*/
   }
   return $first_img;
  }

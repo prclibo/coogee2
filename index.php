@@ -19,7 +19,6 @@
         </div><!-- end postmeta -->
 					<div class="clear"></div>
 		  </div><!-- end title -->
-					<div class="new"><?php include('includes/new.php'); ?></div>
 					<?php if (is_sticky()) {echo '<div class="sticky-post"></div>';} ?>
 					<div class="clear"></div>
 					<!-- thumbnail -->
