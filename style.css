@@ -61,6 +61,7 @@ code{
 
 #header{
 	border-top: 6px solid #91aa9d;
+    min-width:960px;
 	height: 100px;
 	background: #193441 none no-repeat scroll 0%;
 	margin: 0;
@@ -517,6 +518,8 @@ input#submit {
 }
 
 #searchinput {
+    position: relative;
+    top:-10px;
 	background: none;
 	border: none;
 	width: 170px;
